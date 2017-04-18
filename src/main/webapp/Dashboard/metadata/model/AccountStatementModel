@@ -1,0 +1,314 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AccountStatementModel"
+    },
+    "name": "MyModel",
+    "designerId": "d09baf56-a961-4e2a-94f8-f89c68c8943e",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "refId"
+            },
+            "name": "MyField4",
+            "designerId": "a423bccd-d930-4c37-b3cd-44ca4e09de8a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "amount"
+            },
+            "name": "MyField5",
+            "designerId": "067200c6-50d0-4d76-94cc-eb0cb112c42e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "balance"
+            },
+            "name": "MyField6",
+            "designerId": "de3da47d-1fc0-4526-907c-8eaf6d7d2e8c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "itemClass"
+            },
+            "name": "MyField7",
+            "designerId": "5b7d9a8d-816f-4f78-b598-283f3ba1955e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "itemDate"
+            },
+            "name": "MyField8",
+            "designerId": "cbdc8f2b-530d-40b8-bbd5-9922ab7686e4"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "avgPrice"
+            },
+            "name": "MyField9",
+            "designerId": "645921a1-026c-4119-ab80-b190a7a42583"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "betCategoryType"
+            },
+            "name": "MyField10",
+            "designerId": "ce6cf99a-4416-42e5-8034-b46918670c4b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "betSize"
+            },
+            "name": "MyField11",
+            "designerId": "a2fb48b8-e911-47cf-82e6-c90775b8b14c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "betType"
+            },
+            "name": "MyField12",
+            "designerId": "1fd44ad6-dd83-48f1-932f-5be61eb9b65c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "commissionRate"
+            },
+            "name": "MyField13",
+            "designerId": "8a5e4523-f4c2-4aa1-a713-1d288b10734e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "eventId"
+            },
+            "name": "MyField14",
+            "designerId": "45157c9b-3550-4c79-ade2-c7158adbfd0e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "eventTypeId"
+            },
+            "name": "MyField15",
+            "designerId": "aa76b62e-bedc-4e10-9408-4781a14fcd1a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "fullMarketName"
+            },
+            "name": "MyField16",
+            "designerId": "6f415284-5385-4ffb-8de7-de414cce660f"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "grossBetAmount"
+            },
+            "name": "MyField17",
+            "designerId": "550479cc-18aa-4c6d-806d-629f56973acb"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "marketName"
+            },
+            "name": "MyField18",
+            "designerId": "04b3b928-84a6-4bc7-837c-90da7ee15acd"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "marketType"
+            },
+            "name": "MyField19",
+            "designerId": "242d780a-42e6-49d2-84e0-3591f526ccb9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "placedDate"
+            },
+            "name": "MyField20",
+            "designerId": "d0aa029a-3967-462c-af4f-39ea50a886c0"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "selectionId"
+            },
+            "name": "MyField21",
+            "designerId": "dde0d8fa-374d-42e7-b773-3b761ab865de"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "selectionName"
+            },
+            "name": "MyField22",
+            "designerId": "e183a354-36bf-4055-b066-4778c8b98815"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "startDate"
+            },
+            "name": "MyField23",
+            "designerId": "7a1330e9-05a0-4598-a805-6721ad4d3a97"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "transactionId"
+            },
+            "name": "MyField24",
+            "designerId": "e3c9e02e-db75-4aa5-87fc-bc3c2fa81852"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "transactionType"
+            },
+            "name": "MyField25",
+            "designerId": "4cbb4179-7c0d-4a5e-9c34-8a2ca7fd17ac"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "winLose"
+            },
+            "name": "MyField26",
+            "designerId": "48b470bb-c186-4712-baa9-b6af5df2d254"
+        }
+    ]
+}

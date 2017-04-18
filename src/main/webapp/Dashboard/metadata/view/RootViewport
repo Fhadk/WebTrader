@@ -1,0 +1,611 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|initialView": true,
+        "designer|userAlias": "rootviewport",
+        "designer|userClassName": "RootViewport",
+        "layout": "vbox"
+    },
+    "name": "MyViewport",
+    "designerId": "f0dca01e-bd6c-43b5-99ca-554a05bb62cb",
+    "cn": [
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "activeTab": 0,
+                "layout|flex": 1
+            },
+            "name": "MyTabPanel",
+            "designerId": "41660fec-4a9a-4e4b-8596-9483d06c9e6d",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Markets"
+                    },
+                    "name": "MyPanel",
+                    "designerId": "d2f6b440-05d4-45ce-870c-8428edab67e8",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "MarketTabConfig"
+                            },
+                            "name": "TabConfig",
+                            "designerId": "b95952bb-a379-4beb-87a8-9e82aad85ffe"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "Settings"
+                    },
+                    "name": "MyPanel1",
+                    "designerId": "524dba9f-b0e3-4e27-a7ec-1a7bdb17e328",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "SettingsTabConfig"
+                            },
+                            "name": "TabConfig1",
+                            "designerId": "580c86aa-06c3-49e2-ac47-8ee7cb0ec96e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "layout": "border",
+                        "title": "Account"
+                    },
+                    "name": "MyPanel2",
+                    "designerId": "ea6e8fb2-8a5f-47e7-ada7-953947585acf",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Tab",
+                            "reference": {
+                                "name": "tabConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "AccountTabConfig"
+                            },
+                            "name": "TabConfig2",
+                            "designerId": "eae549cd-82ad-49b7-a529-4a45c241335d"
+                        },
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "designer|displayName": "TwinContainer",
+                                "layout": "hbox",
+                                "layout|region": "center"
+                            },
+                            "name": "MyContainer",
+                            "designerId": "5d405639-0d29-42d4-ad61-fc6ca04e7f81",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "store": "AccountDetailsStore",
+                                        "title": "Account Details",
+                                        "width": 150
+                                    },
+                                    "name": "MyGridPanel",
+                                    "designerId": "13a53d26-c6c2-4e6e-9a98-41cf5c18bd31",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.grid.View",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "AccountDetailsGridView"
+                                            },
+                                            "name": "MyGridView",
+                                            "designerId": "30b89772-1a83-4a27-8e3b-ec0d3400db34"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "item",
+                                                "text": "Item"
+                                            },
+                                            "name": "MyColumn1",
+                                            "designerId": "dc840b17-db8b-4353-ac86-68668160e63e"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "value",
+                                                "text": "Value"
+                                            },
+                                            "name": "MyColumn2",
+                                            "designerId": "f54c2bcd-35df-4bd6-9487-ac88c9071959"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "store": "AccountFundsStore",
+                                        "title": "Account Funds",
+                                        "width": 150
+                                    },
+                                    "name": "MyGridPanel1",
+                                    "designerId": "6706ce33-1766-43ea-b2e2-c5ee014e2919",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.grid.View",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|displayName": "AccountFundsGridView"
+                                            },
+                                            "name": "MyGridView1",
+                                            "designerId": "45c61f64-b3bf-4062-a94e-97323ea8b63d"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "item",
+                                                "text": "Item"
+                                            },
+                                            "name": "MyColumn4",
+                                            "designerId": "f71ae26d-acd7-4906-9b5a-5ecaeb1d0263"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Column",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "value",
+                                                "text": "Value"
+                                            },
+                                            "name": "MyColumn5",
+                                            "designerId": "c067fe33-3f47-4be6-b57f-6d49aaa1384b"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 150,
+                                "layout|flex": 1,
+                                "layout|region": "south",
+                                "store": "AccountStatementStore",
+                                "title": "Account Statement"
+                            },
+                            "name": "MyGridPanel2",
+                            "designerId": "5ed6a465-e9ce-4d50-988c-4df415f5168a",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.View",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "AccountStatementGridView"
+                                    },
+                                    "name": "MyGridView2",
+                                    "designerId": "0e8afdbe-3cdc-4cf2-be56-6b29bdd38d40"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "refId",
+                                        "text": "Ref Id"
+                                    },
+                                    "name": "MyColumn",
+                                    "designerId": "41df4b48-bf9d-4ebc-a01c-0366324f2d6f"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "amount",
+                                        "text": "Amount"
+                                    },
+                                    "name": "MyColumn6",
+                                    "designerId": "8e9ab842-2796-4006-bdc1-2be9a1bfacbb"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "balance",
+                                        "text": "Balance"
+                                    },
+                                    "name": "MyColumn7",
+                                    "designerId": "1de4d365-4c6d-4cfa-ba65-eb96b4c86a54"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "itemClass",
+                                        "text": "Item Class"
+                                    },
+                                    "name": "MyColumn8",
+                                    "designerId": "5e09ec59-c28c-4a5b-bcdc-2d555527f456"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "itemDate",
+                                        "text": "Item Date"
+                                    },
+                                    "name": "MyColumn9",
+                                    "designerId": "5a58e827-edc4-447c-98aa-3089b643bcab"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "avgPrice",
+                                        "text": "Avg Price"
+                                    },
+                                    "name": "MyColumn10",
+                                    "designerId": "e02d43f6-b700-4181-ada0-8270ed7892a9"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "betCategoryType",
+                                        "text": "Bet Category Type"
+                                    },
+                                    "name": "MyColumn11",
+                                    "designerId": "200fe463-f84a-47d2-b384-df0beb78e707"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "betSize",
+                                        "text": "Bet Size"
+                                    },
+                                    "name": "MyColumn12",
+                                    "designerId": "a4359806-f8cb-485b-8599-f8447e87f1e5"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "betType",
+                                        "text": "Bet Type"
+                                    },
+                                    "name": "MyColumn13",
+                                    "designerId": "27421b58-04d6-49d8-8979-7967456ef671"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "commissionRate",
+                                        "text": "Commission Rate"
+                                    },
+                                    "name": "MyColumn14",
+                                    "designerId": "7abbe9e3-972c-40e0-8d8f-17d7f6bb6034"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "eventId",
+                                        "text": "Event Id"
+                                    },
+                                    "name": "MyColumn15",
+                                    "designerId": "c0f20b45-117a-4214-ac14-316cf2312b5a"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "eventTypeId",
+                                        "text": "Event Type Id"
+                                    },
+                                    "name": "MyColumn16",
+                                    "designerId": "2ceee0e4-de8d-469a-884b-f771abce85ee"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "fullMarketName",
+                                        "text": "Full Market Name"
+                                    },
+                                    "name": "MyColumn17",
+                                    "designerId": "1c75f599-5e61-4592-b69a-b901cccc3f80"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "grossBetAmount",
+                                        "text": "Gross Bet Amount"
+                                    },
+                                    "name": "MyColumn18",
+                                    "designerId": "f76316fb-db48-4cf4-b164-f67b47517b29"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "marketName",
+                                        "text": "Market Name"
+                                    },
+                                    "name": "MyColumn19",
+                                    "designerId": "d320747c-1e9a-4684-a5a8-0e00c7f4a026"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "marketType",
+                                        "text": "Market Type"
+                                    },
+                                    "name": "MyColumn20",
+                                    "designerId": "b3f18960-d8f1-4ae1-92d6-8a8f8677c4fa"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "placedDate",
+                                        "text": "Placed Date"
+                                    },
+                                    "name": "MyColumn21",
+                                    "designerId": "0292f0f1-bbcb-41d8-893c-afd1b02f4d6f"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "selectionId",
+                                        "text": "Selection Id"
+                                    },
+                                    "name": "MyColumn22",
+                                    "designerId": "dea9e9ac-f111-4a98-808c-7c86c0396ba0"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "selectionName",
+                                        "text": "Selection Name"
+                                    },
+                                    "name": "MyColumn23",
+                                    "designerId": "25e14826-13d2-4aec-aa83-6e946e8272eb"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "startDate",
+                                        "text": "Start Date"
+                                    },
+                                    "name": "MyColumn24",
+                                    "designerId": "38f1a29f-376d-4b0c-a5f6-488cfe8e796f"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "transactionId",
+                                        "text": "Transaction Id"
+                                    },
+                                    "name": "MyColumn25",
+                                    "designerId": "610f4232-e56d-4321-9750-760a5e2b02f2"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "transactionType",
+                                        "text": "Transaction Type"
+                                    },
+                                    "name": "MyColumn26",
+                                    "designerId": "5c791ce9-c155-45d4-a66c-aa7362389425"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "winLose",
+                                        "text": "Win Lose"
+                                    },
+                                    "name": "MyColumn27",
+                                    "designerId": "819fecfe-6624-4282-8d62-b159b13b2347"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

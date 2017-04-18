@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <description>Web interface (fronend) for ST</description>
+    <display-name>ST.Web.Trader</display-name>
+    <context-param>
+        <param-name>quartz:config-file</param-name>
+        <param-value>quartz.properties</param-value>
+    </context-param>
+    <context-param>
+        <param-name>quartz:scheduler-context-servlet-context-key</param-name>
+        <param-value>scheduler-context-servlet-context-key</param-value>
+    </context-param>
+    <context-param>
+        <param-name>quartz:start-on-load</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>quartz:start-delay-seconds</param-name>
+        <param-value>0</param-value>
+    </context-param>
+    <context-param>
+        <param-name>quartz:shutdown-on-unload</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>quartz:wait-on-shutdown</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <listener>
+        <description>QuartzInitializerListener</description>
+        <listener-class>com.charlieparkerstraat.QuartzInitializerListener</listener-class>
+    </listener>
+    <listener>
+        <description>RequestListener</description>
+        <listener-class>com.charlieparkerstraat.RequestListener</listener-class>
+    </listener>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>

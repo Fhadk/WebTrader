@@ -1,0 +1,18 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[{\"item\":\"quia\",\"value\":\"rem\"},{\"item\":\"sint\",\"value\":\"ut\"},{\"item\":\"voluptate\",\"value\":\"dolor\"},{\"item\":\"adipisci\",\"value\":\"est\"},{\"item\":\"ut\",\"value\":\"aut\"},{\"item\":\"suscipit\",\"value\":\"velit\"},{\"item\":\"nam\",\"value\":\"voluptatum\"},{\"item\":\"praesentium\",\"value\":\"ab\"},{\"item\":\"excepturi\",\"value\":\"modi\"},{\"item\":\"est\",\"value\":\"qui\"},{\"item\":\"placeat\",\"value\":\"qui\"},{\"item\":\"at\",\"value\":\"aut\"},{\"item\":\"et\",\"value\":\"expedita\"},{\"item\":\"ut\",\"value\":\"aut\"},{\"item\":\"eveniet\",\"value\":\"ducimus\"},{\"item\":\"porro\",\"value\":\"omnis\"},{\"item\":\"dolorem\",\"value\":\"illum\"},{\"item\":\"in\",\"value\":\"ullam\"},{\"item\":\"qui\",\"value\":\"eligendi\"},{\"item\":\"vitae\",\"value\":\"illum\"},{\"item\":\"numquam\",\"value\":\"eum\"},{\"item\":\"fugiat\",\"value\":\"amet\"},{\"item\":\"vero\",\"value\":\"sequi\"},{\"item\":\"esse\",\"value\":\"aut\"},{\"item\":\"nihil\",\"value\":\"ut\"},{\"item\":\"sapiente\",\"value\":\"voluptas\"},{\"item\":\"dicta\",\"value\":\"autem\"},{\"item\":\"voluptate\",\"value\":\"non\"},{\"item\":\"sint\",\"value\":\"autem\"},{\"item\":\"ducimus\",\"value\":\"exercitationem\"}]"
+        ],
+        "designer|userAlias": "accountfundsstore",
+        "designer|userClassName": "AccountFundsStore",
+        "model": "AccountFundsModel",
+        "storeId": "AccountFundsStore"
+    },
+    "designerId": "f9762254-fd8e-4215-9812-2ed108d4b4d4"
+}

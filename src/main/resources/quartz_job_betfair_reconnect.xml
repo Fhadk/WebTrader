@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2017
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<job-scheduling-data
+    xmlns="http://www.quartz-scheduler.org/xml/JobSchedulingData"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.quartz-scheduler.org/xml/JobSchedulingData http://www.quartz-scheduler.org/xml/job_scheduling_data_2_0.xsd"
+    version="1.8">
+    <schedule>
+        <job>
+            <name>BetfairReconnectJob</name>
+            <job-class>com.charlieparkerstraat.betfair.BetfairReconnectJob</job-class>
+            <job-data-map>
+                <entry>
+                    <key>supported-betfair-response-message-type</key>
+                    <value>org.charlieparkerstraat.betfair.api.model.session.simpletype.LogonResponse</value>
+                </entry>
+                <entry>
+                    <key>betfair-client.reconnection-timeout</key>
+                    <value>10000</value>
+                </entry>
+                <entry>
+                    <key>betfair-client.username</key>
+                    <value>andrew.kharchenko@gmail.com</value>
+                </entry>
+                <entry>
+                    <key>betfair-client.password-encrypted</key>
+                    <value>BaB8mnwKkEax969J7zCyhHA0CChZZjXn</value>
+                    <!--<description>b3ch3r0vka</description>-->
+                </entry>
+                <entry>
+                    <key>betfair-client.application-key-encrypted</key>
+                    <value>4m9ny31xAwaNUPSPESI3M7hwBmC6aGPU7EkD84Bwdgw=</value>
+                    <!--<description>4IgW7RlQq24sLcpe</description>-->
+                </entry>
+                <entry>
+                    <key>betfair-client.application-key-delayed-encrypted</key>
+                    <value>A26qp55IxqwsXyfBIwU/55zrcrLUCnVYZ07x1BkNpIM=</value>
+                    <!--<description>OaAKE1sVYvpgztbM</description>-->
+                </entry>
+                <entry>
+                    <key>betfair-client.keystore-filepath</key>
+                    <value>D:\workspace-2.0\betfair-ui\webtrader\src\main\resources\test-client-2048.p12</value>
+                </entry>
+                <entry>
+                    <key>betfair-client.keystore-password-encrypted</key>
+                    <value>yMbl77LIMKJ1Mr88Qucc1A==</value>
+                    <!--<description>blank (empty)</description>-->
+                </entry>
+                <entry>
+                    <key>betfair-client.delayed-mode</key>
+                    <value>false</value>
+                </entry>
+            </job-data-map>
+        </job>
+        <trigger>
+            <cron>
+                <name>BetfairReconnectTrigger</name>
+                <job-name>BetfairReconnectJob</job-name>
+                <cron-expression>0/10 * * * * ? *</cron-expression>
+                <!--
+                <cron-expression>seconds minutes hours day-of-month month day-of-week year</cron-expression>
+                see http://www.quartz-scheduler.org/documentation/quartz-2.x/tutorials/crontrigger.html
+                -->
+            </cron>
+        </trigger>
+    </schedule>
+</job-scheduling-data>

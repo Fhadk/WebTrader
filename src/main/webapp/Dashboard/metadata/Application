@@ -1,0 +1,26 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "AccountDetailsModel",
+            "AccountFundsModel",
+            "AccountStatementModel"
+        ],
+        "name": "Dashboard",
+        "stores": [
+            "AccountDetailsStore",
+            "AccountFundsStore",
+            "AccountStatementStore"
+        ],
+        "views": [
+            "RootViewport"
+        ]
+    },
+    "name": "Application",
+    "designerId": "application"
+}

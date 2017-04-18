@@ -1,0 +1,18 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[{\"item\":\"nobis\",\"value\":\"dolor\"},{\"item\":\"magni\",\"value\":\"quidem\"},{\"item\":\"sint\",\"value\":\"aut\"},{\"item\":\"culpa\",\"value\":\"rerum\"},{\"item\":\"quia\",\"value\":\"fugiat\"},{\"item\":\"non\",\"value\":\"officia\"},{\"item\":\"nobis\",\"value\":\"maiores\"},{\"item\":\"quo\",\"value\":\"dolorem\"},{\"item\":\"voluptas\",\"value\":\"eaque\"},{\"item\":\"et\",\"value\":\"odio\"},{\"item\":\"aspernatur\",\"value\":\"ipsam\"},{\"item\":\"numquam\",\"value\":\"quae\"},{\"item\":\"accusamus\",\"value\":\"minus\"},{\"item\":\"atque\",\"value\":\"et\"},{\"item\":\"est\",\"value\":\"saepe\"},{\"item\":\"minima\",\"value\":\"consequuntur\"},{\"item\":\"aut\",\"value\":\"omnis\"},{\"item\":\"et\",\"value\":\"est\"},{\"item\":\"aut\",\"value\":\"quo\"},{\"item\":\"dolore\",\"value\":\"dolorem\"},{\"item\":\"id\",\"value\":\"quis\"},{\"item\":\"suscipit\",\"value\":\"nulla\"},{\"item\":\"adipisci\",\"value\":\"aut\"},{\"item\":\"perspiciatis\",\"value\":\"quidem\"},{\"item\":\"est\",\"value\":\"incidunt\"},{\"item\":\"atque\",\"value\":\"nobis\"},{\"item\":\"cupiditate\",\"value\":\"accusantium\"},{\"item\":\"nam\",\"value\":\"laboriosam\"},{\"item\":\"deleniti\",\"value\":\"voluptatem\"},{\"item\":\"quas\",\"value\":\"vel\"}]"
+        ],
+        "designer|userAlias": "accountdetailsstore",
+        "designer|userClassName": "AccountDetailsStore",
+        "model": "AccountDetailsModel",
+        "storeId": "AccountDetailsStore"
+    },
+    "designerId": "4fd71b40-4a40-4225-befe-d4686f4ce399"
+}

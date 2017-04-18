@@ -1,0 +1,41 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AccountFundsModel"
+    },
+    "name": "MyModel",
+    "designerId": "740d886c-8c0d-4224-8e5c-0aacc0394bdc",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "item"
+            },
+            "name": "MyField2",
+            "designerId": "0e242bc5-97bc-4d5a-8df4-6673b2d96b08"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "value"
+            },
+            "name": "MyField3",
+            "designerId": "9f44fa76-18b6-4788-a9f2-a2a5bf3fd727"
+        }
+    ]
+}

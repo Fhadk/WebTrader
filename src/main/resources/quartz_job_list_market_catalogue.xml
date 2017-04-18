@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (C) 2017
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<job-scheduling-data
+    xmlns="http://www.quartz-scheduler.org/xml/JobSchedulingData"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.quartz-scheduler.org/xml/JobSchedulingData http://www.quartz-scheduler.org/xml/job_scheduling_data_2_0.xsd"
+    version="1.8">
+    <schedule>
+        <job>
+            <name>ListMarketCatalogueJob</name>
+            <job-class>com.charlieparkerstraat.betfair.ListMarketCatalogueJob</job-class>
+            <job-data-map>
+                <entry>
+                    <key>supported-betfair-response-message-type</key>
+                    <value>com.betfair.sports.api.MarketCatalogue</value>
+                </entry>
+                <entry>
+                    <key>betfair-exchange-ids</key>
+                    <value>1</value>
+                </entry>
+                <entry>
+                    <key>betfair-event-type-ids</key>
+                    <value>1</value>
+                </entry>
+                <entry>
+                    <key>betfair-turning-in-play</key>
+                    <value>True</value>
+                </entry>
+                <entry>
+                    <key>betfair-market-betting-types</key>
+                    <value>ODDS</value>
+                </entry>
+                <entry>
+                    <key>betfair-market-type-codes</key>
+                    <value>MATCH_ODDS,OVER_UNDER_05,OVER_UNDER_15,OVER_UNDER_25,OVER_UNDER_35,OVER_UNDER_45,OVER_UNDER_55,OVER_UNDER_65,OVER_UNDER_75,OVER_UNDER_85</value>
+                </entry>
+                <entry>
+                    <key>betfair-market-projections</key>
+                    <value>COMPETITION,EVENT,EVENT_TYPE,MARKET_DESCRIPTION,RUNNER_DESCRIPTION,RUNNER_METADATA,MARKET_START_TIME</value>
+                </entry>
+                <entry>
+                    <key>betfair-locale</key>
+                    <value>en</value>
+                </entry>
+                <entry>
+                    <key>betfair-from-hours</key>
+                    <value>2</value>
+                </entry>
+                <entry>
+                    <key>betfair-to-hours</key>
+                    <value>24</value>
+                </entry>
+                <entry>
+                    <key>betfair-market-sort</key>
+                    <value>MAXIMUM_TRADED</value>
+                </entry>
+                <entry>
+                    <key>betfair-maximum-results</key>
+                    <value>100</value>
+                </entry>
+            </job-data-map>
+        </job>
+        <trigger>
+            <cron>
+                <name>ListMarketCatalogueTrigger</name>
+                <job-name>ListMarketCatalogueJob</job-name>
+                <cron-expression>0 0 0/4 * * ? *</cron-expression>
+                <!--
+                <cron-expression>seconds minutes hours day-of-month month day-of-week year</cron-expression>
+                see http://www.quartz-scheduler.org/documentation/quartz-2.x/tutorials/crontrigger.html
+                -->
+            </cron>
+        </trigger>
+    </schedule>
+</job-scheduling-data>
